@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Firestore Pagination</title>
+  </head>
+  <body>
+    <div class="container"></div>
+    <div class="loading">Loading alloy data...</div>
+
+    <div class="load-more">
+      <button>Load More</button>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: 'AIzaSyBCjpiV5LtlquW2CSFQcoCkMIa1vAJ63bI',
+        authDomain: 'alloy-guide-pwa.firebaseapp.com',
+        databaseURL: 'https://alloy-guide-pwa.firebaseio.com',
+        projectId: 'alloy-guide-pwa',
+        storageBucket: 'alloy-guide-pwa.appspot.com',
+        messagingSenderId: '301459418139',
+        appId: '1:301459418139:web:42676fd1ceacee87ea1cbe',
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+    </script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
